@@ -16,4 +16,12 @@ public class Car {
     public void print() {
         System.out.println(this.name + " : " + this.state);
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getState() {
+        return this.state.length();
+    }
 }
