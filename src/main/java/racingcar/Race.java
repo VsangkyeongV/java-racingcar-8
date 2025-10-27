@@ -51,7 +51,7 @@ public class Race {
         return cars.stream()
                 .filter(car -> car.getState() == maxPosition)
                 .map(car -> car.getName())
-                .collect(Collectors.joining(","));
+                .collect(Collectors.joining(", "));
     }
 
     public void run() {
