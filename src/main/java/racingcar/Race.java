@@ -36,6 +36,18 @@ public class Race {
         });
     }
 
+    public String getWinner() {
+        int maxPosition = cars.stream()
+                            .mapToInt(car -> car.getState())
+                            .max()
+                            .orElse(0);
+
+        return cars.stream()
+                .filter(car -> car.getState() == maxPosition)
+                .map(car -> car.getName())
+                .collect(Collectors.joining(","));
+    }
+
     public void run() {
         makeCars();
 
@@ -43,6 +55,9 @@ public class Race {
             moveCars();
             System.out.println();
         }
+
+        String winners = getWinner();
+        
     }
     
 }
