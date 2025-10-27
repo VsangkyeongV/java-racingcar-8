@@ -1,7 +1,7 @@
 package racingcar.valid;
 
-public class tryCountValid {
-    public tryCountValid(String tryCount) {
+public final class TryCountValid {
+    public TryCountValid(String tryCount) {
         if (tryCount.isEmpty()) {
             throw new IllegalArgumentException("시도할 횟수를 입력해주세요.");
         }
