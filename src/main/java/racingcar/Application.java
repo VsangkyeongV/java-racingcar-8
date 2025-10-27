@@ -9,7 +9,7 @@ public class Application {
 
     private final InputView inputView = new InputView();
 
-    void run() {
+    public void run() {
         String carNames = inputView.readCarNames();
         CarNameValid carNameValid = new CarNameValid(carNames);
         String tryCount = inputView.readTryCount();
