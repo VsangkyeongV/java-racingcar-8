@@ -1,9 +1,9 @@
 package racingcar;
 
-import racingcar.valid.CarNameValid;
-import racingcar.valid.TryCountValid;
-import racingcar.view.InputView;
-import racingcar.view.OutputView;
+import racingcar.valid.carNameValid;
+import racingcar.valid.tryCountValid;
+import racingcar.View.InputView;
+import racingcar.View.OutputView;
 
 public class Application {
 
@@ -11,9 +11,9 @@ public class Application {
 
     public void run() {
         String carNames = inputView.readCarNames();
-        CarNameValid carNameValid = new CarNameValid(carNames);
+        carNameValid carNameValid = new carNameValid(carNames);
         String tryCount = inputView.readTryCount();
-        TryCountValid tryCountValid = new TryCountValid(tryCount);
+        tryCountValid tryCountValid = new tryCountValid(tryCount);
         Race race = new Race(carNames, tryCount);
         race.run();
         String result = race.getResult();

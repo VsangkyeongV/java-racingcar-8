@@ -3,9 +3,9 @@ package racingcar.valid;
 import java.util.Arrays;
 import java.util.List;
 
-public final class CarNameValid {
+public final class carNameValid {
 
-    public CarNameValid(String carNames) {
+    public carNameValid(String carNames) {
         if (carNames.isEmpty()) {
             throw new IllegalArgumentException("경주할 자동차 이름을 입력해주세요.");
         }
