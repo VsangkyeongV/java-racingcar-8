@@ -4,6 +4,7 @@ import racingcar.valid.carNameValid;
 import racingcar.valid.tryCountValid;
 import racingcar.View.InputView;
 import racingcar.View.OutputView;
+import racingcar.Race;
 
 public class Application {
 
