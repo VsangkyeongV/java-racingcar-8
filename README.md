@@ -11,7 +11,7 @@
         - 입력 없음
         - 숫자 아님
 3. errorException (Valid.java)
-4. 자동차 이름 문자열 처리 (Car.java)
+4. 자동차 객체 구현 (Car.java)
 5. 자동차 경주 구현 (Race.java)
 6. 우승자 판별 (Winner.java)
 7. 각 부분 test
