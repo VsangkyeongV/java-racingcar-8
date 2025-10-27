@@ -24,7 +24,7 @@ public final class CarNameValid {
                 throw new IllegalArgumentException("자동차 이름은 5자 이하로 입력해야 합니다.");
             }
 
-            if (!name.matches("[a-zA-Z0-9]+")) {
+            if (!name.matches("[a-zA-Z]+")) {
                 throw new IllegalArgumentException("자동차 이름에 허용되지 않은 문자가 포함되어 있습니다: ");
             }
         });
