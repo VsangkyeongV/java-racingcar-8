@@ -10,7 +10,7 @@
     - 경주 횟수 input 유효성
         - 입력 없음
         - 숫자 아님
-3. errorException (View.java)
+3. errorException (Valid.java)
 4. 자동차 이름 문자열 처리 (Car.java)
 5. 자동차 경주 구현 (Race.java)
 6. 우승자 판별 (Winner.java)
