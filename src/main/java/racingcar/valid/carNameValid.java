@@ -13,6 +13,10 @@ public final class CarNameValid {
         if (!carNames.contains(",")) {
             throw new IllegalArgumentException("자동차 이름은 쉼표(,)로 구분해야 합니다.");
         }
+        if (!carNames.matches("[a-zA-Z,]+")) {
+            throw new IllegalArgumentException("허용되지 않은 문자가 포함되어 있습니다: ");
+        }
+
         validateCarNames(carNames);
     }
 
@@ -22,10 +26,6 @@ public final class CarNameValid {
         names.stream().forEach(name -> {
             if (name.length() > 5) {
                 throw new IllegalArgumentException("자동차 이름은 5자 이하로 입력해야 합니다.");
-            }
-
-            if (!name.matches("[a-zA-Z]+")) {
-                throw new IllegalArgumentException("자동차 이름에 허용되지 않은 문자가 포함되어 있습니다: ");
             }
         });
     }
