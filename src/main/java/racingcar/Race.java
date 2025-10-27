@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class Race {
+
     int tryCount = 0;
     List<String> carNameList = new ArrayList<>();
     private List<Car> cars = new ArrayList<>();
@@ -19,8 +20,8 @@ public class Race {
 
     public void makeCars() {
         this.cars = this.carNameList.stream()
-                    .map(name -> new Car(name))
-                    .collect(Collectors.toList());
+                .map(name -> new Car(name))
+                .collect(Collectors.toList());
     }
 
     public boolean isMove() {
@@ -43,9 +44,9 @@ public class Race {
 
     public String getWinner() {
         int maxPosition = cars.stream()
-                            .mapToInt(car -> car.getState())
-                            .max()
-                            .orElse(0);
+                .mapToInt(car -> car.getState())
+                .max()
+                .orElse(0);
 
         return cars.stream()
                 .filter(car -> car.getState() == maxPosition)
@@ -62,5 +63,5 @@ public class Race {
         }
 
     }
-    
+
 }

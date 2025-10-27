@@ -6,6 +6,7 @@ import racingcar.view.InputView;
 import racingcar.view.OutputView;
 
 public class Application {
+
     private final InputView inputView = new InputView();
 
     void run() {

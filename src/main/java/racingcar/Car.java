@@ -1,6 +1,7 @@
 package racingcar;
 
 public class Car {
+
     private final String name;
     private String state;
 
@@ -8,7 +9,7 @@ public class Car {
         this.name = name;
         this.state = "";
     }
-    
+
     public void move() {
         this.state += "-";
     }

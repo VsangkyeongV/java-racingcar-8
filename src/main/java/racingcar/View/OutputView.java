@@ -1,6 +1,7 @@
 package racingcar.view;
 
 public class OutputView {
+
     String result;
     String winner;
 
