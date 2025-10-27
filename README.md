@@ -13,5 +13,5 @@
 3. errorException (Valid.java)
 4. 자동차 객체 구현 (Car.java)
 5. 자동차 경주 구현 (Race.java)
-6. 우승자 판별 (Winner.java)
+6. 우승자 판별 (Race.java)
 7. 각 부분 test
