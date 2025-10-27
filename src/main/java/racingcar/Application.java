@@ -11,9 +11,9 @@ public class Application {
 
     void run() {
         String carNames = inputView.readCarNames();
-        new CarNameValid(carNames);
+        CarNameValid carNameValid = new CarNameValid(carNames);
         String tryCount = inputView.readTryCount();
-        new TryCountValid(tryCount);
+        TryCountValid tryCountValid = new TryCountValid(tryCount);
         Race race = new Race(carNames, tryCount);
         race.run();
         String result = race.getResult();
