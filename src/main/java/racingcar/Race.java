@@ -28,12 +28,12 @@ public class Race {
     }
 
     public void moveCars() {
-        for (Car car : cars) {
+        cars.forEach((car) -> {
             if (isMove()) {
                 car.move();
             }
             car.print();
-        }
+        });
     }
 
     public void run() {
