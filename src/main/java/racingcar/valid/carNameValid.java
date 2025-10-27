@@ -17,7 +17,7 @@ public final class CarNameValid {
             throw new IllegalArgumentException("허용되지 않은 문자가 포함되어 있습니다: ");
         }
 
-        validateCarNames(carNames);
+        // validateCarNames(carNames);
     }
 
     public void validateCarNames(String carNames) {
