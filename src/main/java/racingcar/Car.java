@@ -13,8 +13,9 @@ public class Car {
         this.state += "-";
     }
 
-    public void print() {
-        System.out.println(this.name + " : " + this.state);
+    @Override
+    public String toString() {
+        return this.name + " : " + this.state;
     }
 
     public String getName() {

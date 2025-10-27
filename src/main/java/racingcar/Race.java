@@ -10,6 +10,7 @@ public class Race {
     int tryCount = 0;
     List<String> carNameList = new ArrayList<>();
     private List<Car> cars = new ArrayList<>();
+    String result = "";
 
     public Race(String carNames, String tryCount) {
         carNameList = List.of(carNames.split(","));
@@ -32,8 +33,12 @@ public class Race {
             if (isMove()) {
                 car.move();
             }
-            car.print();
+            result += car.toString() + "\n";
         });
+    }
+
+    public String getResult() {
+        return result;
     }
 
     public String getWinner() {
@@ -53,11 +58,9 @@ public class Race {
 
         for (int i = 0; i < tryCount; i++) {
             moveCars();
-            System.out.println();
+            result += "\n";
         }
 
-        String winners = getWinner();
-        
     }
     
 }
